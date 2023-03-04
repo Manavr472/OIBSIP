@@ -1,0 +1,444 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="10"
+    tools:context=".Home">
+
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textvgrid"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_gravity="center"
+            android:fontFamily="@font/comfortaa_bold"
+            android:text="Unit Converter"
+            android:textColor="@android:color/primary_text_dark_nodisable"
+            android:textSize="34sp">
+
+        </TextView>
+
+        <GridLayout
+            android:layout_width="406dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_margin="5dp"
+            android:columnCount="2"
+            android:columnOrderPreserved="true"
+            android:rowCount="4"
+            android:useDefaultMargins="true">
+
+
+            <!--Temperature 1st button-->
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cv_temp"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_margin="10dp"
+                android:layout_marginLeft="30dp"
+                app:cardCornerRadius="15dp"
+                app:cardElevation="5dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+
+                    <ImageView
+                        android:id="@+id/iv_temp"
+                        android:layout_width="70dp"
+                        android:layout_height="70dp"
+                        android:background="@drawable/temperature"
+                        android:contentDescription="Temperature">
+
+                    </ImageView>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Temperature"
+                        android:textColor="@android:color/primary_text_dark_nodisable"
+                        android:textSize="20sp">
+
+                    </TextView>
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+
+            <!--Weight 1st row 2nd column button-->
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cv_weight"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_margin="10dp"
+                android:layout_marginLeft="30dp"
+                app:cardCornerRadius="15dp"
+                app:cardElevation="5dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+
+                    <ImageView
+                        android:id="@+id/iv_weight"
+                        android:layout_width="70dp"
+                        android:layout_height="70dp"
+                        android:background="@drawable/weight"
+
+                        android:contentDescription="Weight">
+
+                    </ImageView>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Weight"
+                        android:textColor="@android:color/primary_text_dark_nodisable"
+                        android:textSize="20sp"></TextView>
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+
+            <!--Speed 2st row 1nd column button-->
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cv_Speed"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_margin="10dp"
+                android:layout_marginLeft="30dp"
+                app:cardCornerRadius="15dp"
+                app:cardElevation="5dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+
+                    <ImageView
+                        android:id="@+id/iv_Speed"
+                        android:layout_width="70dp"
+                        android:layout_height="70dp"
+                        android:background="@drawable/speed"
+                        android:contentDescription="Speed">
+
+                    </ImageView>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Speed"
+                        android:textColor="@android:color/primary_text_dark_nodisable"
+                        android:textSize="18sp">
+
+                    </TextView>
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+
+            <!--Length 2st row 2nd column button-->
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cv_length"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_margin="10dp"
+                android:layout_marginLeft="30dp"
+                app:cardCornerRadius="15dp"
+                app:cardElevation="5dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+
+                    <ImageButton
+                        android:id="@+id/iv_length"
+                        android:layout_width="70dp"
+                        android:layout_height="70dp"
+                        android:background="@drawable/length"
+                        android:contentDescription="length">
+
+                    </ImageButton>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Length"
+                        android:textColor="@android:color/primary_text_dark_nodisable"
+                        android:textSize="20sp">
+
+                    </TextView>
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+
+            <!--Area 3st row 1nd column button-->
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cv_Area"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_margin="10dp"
+                android:layout_marginLeft="30dp"
+                app:cardCornerRadius="15dp"
+                app:cardElevation="5dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+
+                    <ImageView
+                        android:id="@+id/iv_Area"
+                        android:layout_width="70dp"
+                        android:layout_height="70dp"
+                        android:background="@drawable/area"
+                        android:contentDescription="Area">
+
+                    </ImageView>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Area"
+                        android:textColor="@android:color/primary_text_dark_nodisable"
+                        android:textSize="20sp">
+
+                    </TextView>
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+
+            <!-- Volume 3st row 2nd column button-->
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cv_Volume"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_margin="10dp"
+                android:layout_marginLeft="30dp"
+                app:cardCornerRadius="15dp"
+                app:cardElevation="5dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+
+                    <ImageView
+                        android:id="@+id/iv_Volume"
+                        android:layout_width="70dp"
+                        android:layout_height="70dp"
+                        android:background="@drawable/volume"
+                        android:contentDescription="Volume">
+
+                    </ImageView>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Volume"
+                        android:textColor="@android:color/primary_text_dark_nodisable"
+                        android:textSize="20sp">
+
+                    </TextView>
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+
+            <!-- Pressure 4th row 1st column button-->
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cv_Pressure"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_margin="10dp"
+                android:layout_marginLeft="30dp"
+                app:cardCornerRadius="15dp"
+                app:cardElevation="5dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+
+                    <ImageView
+                        android:id="@+id/iv_Pressure"
+                        android:layout_width="70dp"
+                        android:layout_height="70dp"
+                        android:background="@drawable/pressure"
+                        android:contentDescription="Pressure">
+
+                    </ImageView>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Pressure"
+                        android:textColor="@android:color/primary_text_dark_nodisable"
+                        android:textSize="20sp">
+
+                    </TextView>
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+
+            <!--Current 4th row 2nd column button-->
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cv_Current"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_margin="10dp"
+                android:layout_marginLeft="30dp"
+                app:cardCornerRadius="15dp"
+                app:cardElevation="5dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+
+                    <ImageView
+                        android:id="@+id/iv_Current"
+                        android:layout_width="70dp"
+                        android:layout_height="70dp"
+                        android:background="@drawable/current"
+                        android:contentDescription="Current">
+
+                    </ImageView>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Current"
+                        android:textColor="@android:color/primary_text_dark_nodisable"
+                        android:textSize="20sp">
+
+                    </TextView>
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+
+            <!--Force 5th row 1st column button-->
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cv_Force"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_margin="10dp"
+                android:layout_marginLeft="30dp"
+                app:cardCornerRadius="15dp"
+                app:cardElevation="5dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+
+                    <ImageView
+                        android:id="@+id/iv_Force"
+                        android:layout_width="70dp"
+                        android:layout_height="70dp"
+                        android:background="@drawable/force"
+                        android:contentDescription="Force">
+
+                    </ImageView>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Force"
+                        android:textColor="@android:color/primary_text_dark_nodisable"
+                        android:textSize="20sp">
+
+                    </TextView>
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+
+            <!-- Resistance 5th row 2nd column button-->
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cv_Resistance"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_margin="10dp"
+                android:layout_marginLeft="30dp"
+                app:cardCornerRadius="15dp"
+                app:cardElevation="5dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+
+                    <ImageView
+                        android:id="@+id/iv_Resistance"
+                        android:layout_width="70dp"
+                        android:layout_height="70dp"
+                        android:background="@drawable/resistance"
+                        android:contentDescription="Resistance">
+
+                    </ImageView>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Resistance"
+                        android:textColor="@android:color/primary_text_dark_nodisable"
+                        android:textSize="20sp">
+
+                    </TextView>
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+
+        </GridLayout>
+
+    </LinearLayout>
+
+</ScrollView>
